@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 노멀라이징 */
+
+.flex {
+  display: flex;
+}
+
+.con {
+  width: 100%;
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+}
+
+@font-face {
+  font-family: "InfinitySans-RegularA1";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "twayair";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 라이브러리 */
+
+.header-wrap {
+  width: 100%;
+  height: 80px;
+  z-index: 3333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+}
+
+.header {
+  max-width: 100%;
+  width: 1240px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+}
+
+.header .logo-wrap .logo {
+  width: 142px;
+  height: 80px;
+  background: url(../img/icon-younglim-logo-white.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.nav-wrap {
+  width: 940px;
+  height: 100%;
+}
+
+.nav-wrap > ul {
+  display: flex;
+  margin-left: 20px;
+}
+
+.nav-wrap > ul > li {
+  padding: 0 20px;
+  font-family: "twayair";
+  color: white;
+}
+
+.nav-wrap > ul > li > a {
+  display: block;
+  font-size: 20px;
+  line-height: 80px;
+}
+
+.nav-wrap > ul .nav-2-death {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  z-index: 3333;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header-wrap:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header-wrap:hover .logo-wrap .logo {
+  width: 142px;
+  height: 80px;
+  background: url(../img/icon-younglim-logo.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.header-wrap:hover .nav-wrap > ul > li {
+  color: black;
+}
+
+.nav-wrap > ul > li:hover .nav-2-death {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-2-death .death-brand {
+  width: 150px;
+  height: 100%;
+}
+
+.nav-2-death .death-brand p {
+  text-align: center;
+  font-size: 19px;
+  line-height: 100px;
+  color: red;
+  font-family: "InfinitySans-RegularA1";
+  cursor: default;
+}
+
+.nav-2-death .death-nav {
+  width: 400px;
+  height: 100%;
+}
+
+.nav-2-death .death-nav li {
+  line-height: 20px;
+  padding: 15px 0 3px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Cafe24SsurroundAir";
+  text-transform: uppercase;
+  transition: 0.1s;
+  color: black;
+}
+
+.nav-2-death .death-nav li:hover {
+  color: midnightblue;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.nav-2-death .death-slide {
+  width: 500px;
+  height: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-2-death .death-choice {
+  width: 200px;
+  height: 100%;
+}
+
+.nav-2-death .death-choice .ch-txtbox {
+  margin-top: 20px;
+}
+
+.nav-2-death .death-choice .ch-txtbox p {
+  font-size: 14px;
+  padding: 0 5px 5px 13px;
+}
+
+.nav-2-death .death-choice .ch-imgbox {
+  width: 180px;
+  height: 170px;
+}
+
+.nav-2-death .death-choice .ch-imgbox a {
+  display: flex;
+}
+
+.nav-2-death .death-choice .ch-imgbox i {
+  margin-left: 20px;
+  line-height: 150px;
+  margin-right: 20px;
+}
+
+.nav-2-death .death-choice .ch-imgbox .choice-img img {
+  width: 100%;
+}
+
+.nav-2-death .death-choice .ca-log {
+  width: 100%;
+  height: 30px;
+  font-weight: bold;
+  position: relative;
+  transition: 0.5s;
+}
+
+.nav-2-death .death-choice .ca-log:hover {
+  color: teal;
+}
+
+.nav-2-death .death-choice .ca-log::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 20px;
+  width: 170px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-2-death .death-choice .ca-log i {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.right-wrap {
+  width: 200px;
+  height: 100%;
+}
+.right-wrap span {
+  line-height: 80px;
+}
+
+.right-wrap span i {
+  padding: 15px;
+  font-size: 23px;
+  color: white;
+}
+
+.header-wrap:hover .right-wrap span i {
+  color: gray;
+  transition: 0.3s;
+}
+
+.header-wrap:hover .right-wrap span i:hover {
+  color: black;
+}
+
+/* header end */
+
+.sc01-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sc01-img {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/mainbanner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sc01-txt {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+}
+
+.sc01-txt .sc01-tptxt {
+  font-size: 90px;
+  font-weight: bold;
+  font-family: "Cafe24SsurroundAir";
+}
+
+.sc01-txt .sc01-bttxt {
+  font-family: "twayair";
+  font-size: 21px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 15px;
+}
+
+.sc01-txt .more-btn {
+  width: 100px;
+  height: 30px;
+  border: 3px solid black;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Cafe24SsurroundAir";
+  transition: 0.5s;
+  border-radius: 50px;
+  line-height: 30px;
+}
+
+.sc01-txt .more-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.sc01-txt .more-btn a {
+  display: block;
+}
