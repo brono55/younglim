@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영림토탈인테리어 공식사이트</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -20,14 +20,26 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
+    <!-- scroll magic -->
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <!-- ScrollMagic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <!-- ScrollMagic 인디케이터 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!-- ScrollMagic & gsap 연동 플러그인 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+
     <!-- wow animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         new WOW().init();
-      </script>
+    </script>
 
-    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+  
 
 </head>
 
@@ -87,7 +99,7 @@
                                                 </a>
                                             </div>
                                             <div class="ca-log">
-                                               <span><a href="#"><i class="fas fa-arrow-right"></i>카탈로그</a></span>
+                                                <span><a href="#"><i class="fas fa-arrow-right"></i>카탈로그</a></span>
                                             </div>
                                         </div>
                                     </div>
@@ -113,17 +125,17 @@
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
                                                         <a href="#">
-                                                          <img src="./img/death-event01.jpg" alt="">
+                                                            <img src="./img/death-event01.jpg" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <a href="#">
-                                                          <img src="./img/death-event02.jpg" alt="">
+                                                            <img src="./img/death-event02.jpg" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <a href="#">
-                                                          <img src="./img/death-event03.jpg" alt="">
+                                                            <img src="./img/death-event03.jpg" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -145,7 +157,7 @@
                                                 </a>
                                             </div>
                                             <div class="ca-log">
-                                               <span><a href="#"><i class="fas fa-arrow-right"></i>카탈로그</a></span>
+                                                <span><a href="#"><i class="fas fa-arrow-right"></i>카탈로그</a></span>
                                             </div>
                                         </div>
                                     </div>
@@ -192,20 +204,25 @@
                                                 </a>
                                             </div>
                                             <div class="ca-log">
-                                               <span><a href="#"><i class="fas fa-arrow-right"></i>카탈로그</a></span>
+                                                <span><a href="#"><i class="fas fa-arrow-right"></i>카탈로그</a></span>
                                             </div>
                                         </div>
                                     </div>
                             </li>
                             <li><a href="#">메거진.Y</a></li>
                             <li><a href="#">쇼룸</a></li>
-                
+
                         </ul>
                     </div>
                     <div class="right-wrap">
-                        <span><i class="fas fa-question"></i></span>
-                        <span><i class="far fa-heart"></i></span>
-                        <span><a href="#"><i class="far fa-user"></i></a></span>
+                        <div class="right-menu">
+                            <span><i class="fas fa-question"></i></span>
+                            <span><i class="far fa-heart"></i></span>
+                            <span><a href="#"><i class="far fa-user"></i></a></span>
+                        </div>
+                        <div class="mo-right-wrap">
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -213,25 +230,788 @@
 
         <section class="section01">
             <div class="sc01-wrap">
-                <div class="sc01-txt">
-                    <p class="sc01-tptxt wow fadeInDown">Interior In TVCF</p>
-                    <p class="sc01-bttxt wow fadeInUp">짧게 지나가서 아쉬웠던 TV CF 속 인테리어를 자세히 <br>
-                       소개해드립니다. 영림의 2021 신제품 소식부터 다양한 <br>
-                       인테리어 연출 방법까지, 한번에 만나보세요.</p>
-                    <div class="more-btn wow fadeInUp"><a href="#">more</a></div>
+                <div class="sc01-imgslider">
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img img01">
+                                    <div class="sc01-txt">
+                                        <p class="sc01-tptxt">Interior In TVCF</p>
+                                        <p class="sc01-bttxt">짧게 지나가서 아쉬웠던 TV CF 속 인테리어를 자세히 <br>
+                                            소개해드립니다. 영림의 2021 신제품 소식부터 다양한 <br>
+                                            인테리어 연출 방법까지, 한번에 만나보세요.</p>
+                                        <div class="more-btn"><a href="#">more</a></div>
+                                        <div class="scroll-down"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img img02">
+                                    <div class="sc01-txt">
+                                        <p class="sc01-tptxt">Interior In TVCF</p>
+                                        <p class="sc01-bttxt">짧게 지나가서 아쉬웠던 TV CF 속 인테리어를 자세히 <br>
+                                            소개해드립니다. 영림의 2021 신제품 소식부터 다양한 <br>
+                                            인테리어 연출 방법까지, 한번에 만나보세요.</p>
+                                        <div class="more-btn"><a href="#">more</a></div>
+                                        <div class="scroll-down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img img03">
+                                    <div class="sc01-txt">
+                                        <p class="sc01-tptxt">Interior In TVCF</p>
+                                        <p class="sc01-bttxt">짧게 지나가서 아쉬웠던 TV CF 속 인테리어를 자세히 <br>
+                                            소개해드립니다. 영림의 2021 신제품 소식부터 다양한 <br>
+                                            인테리어 연출 방법까지, 한번에 만나보세요.</p>
+                                        <div class="more-btn"><a href="#">more</a></div>
+                                        <div class="scroll-down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img img04">
+                                    <div class="sc01-txt">
+                                        <p class="sc01-tptxt">Interior In TVCF</p>
+                                        <p class="sc01-bttxt">짧게 지나가서 아쉬웠던 TV CF 속 인테리어를 자세히 <br>
+                                            소개해드립니다. 영림의 2021 신제품 소식부터 다양한 <br>
+                                            인테리어 연출 방법까지, 한번에 만나보세요.</p>
+                                        <div class="more-btn"><a href="#">more</a></div>
+                                        <div class="scroll-down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sc01-img"></div>
+
             </div>
         </section>
 
         <section class="section02">
+            <div class="sc02-wrap">
+                <div class="sc02-tptxt">
+                    <p class="ko-txt wow slideInLeft">
+                        다양한 라이프스타일 속에서 최적화된 당신의 주거 공간을 디자인합니다.<br>
 
-
+                        가치 있는 당신의 일상을 위한 취향에 딱 맞는 인테리어 디자인을 만나보세요.
+                    </p>
+                    <p class="en-txt wow slideInLeft">Lifestyle design beyond material</p>
+                </div>
+                <div class="sc02-slider">
+                    <div class="swiper-container sc02-slider">
+                        <div class="swiper-wrapper wow bounceInUp">
+                            <div class="swiper-slide">
+                                <div class="sc02-img sc-img01">
+                                    <p><a href="#"></a>욕실<i class="fas fa-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sc02-img sc-img02">
+                                    <p><a href="#">빌트인가구<i class="fas fa-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sc02-img sc-img03">
+                                    <p><a href="#">색상<i class="fas fa-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sc02-img sc-img04">
+                                    <p><a href="#">도어<i class="fas fa-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sc02-img sc-img05">
+                                    <p><a href="#">중문<i class="fas fa-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sc02-img sc-img06">
+                                    <p><a href="#">주방<i class="fas fa-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sc02-img sc-img07">
+                                    <p><a href="#">벽바닥재<i class="fas fa-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sc02-img sc-img08">
+                                    <p><a href="#">창호<i class="fas fa-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section03"></section>
+        <section class="section03">
+            <div class="sc03-wrap">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">Modern</li>
+                    <li class="tab-link" data-tab="tab-2">Natural</li>
+                    <li class="tab-link" data-tab="tab-3">Classic</li>
+                    <li class="tab-link" data-tab="tab-4">Unique</li>
+                </ul>
 
-        <section class="section04"></section>
+                <div id="tab-1" class="tab-content current">
+                    <div class="top-img">
+                        <div class="top-img01">
+                            <img src="./img/main-2-img-modern-1.jpg" alt="">
+                        </div>
+                        <div class="top-img02">
+                            <img src="./img/main-2-img-modern-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="btm-img">
+                        <div class="btm-txt wow bounceInUp">
+                            <p>Modern</p>
+                        </div>
+                        <img src="./img/main-2-img-modern-3.jpg" alt="">
+                        <div class="btm-txtbox">
+                            원룸부터 고급주택까지 다양한 형태의 주거공간에 모두 잘 어울리는
+                            모던 스타일을 만나보세요. 꼭 필요한 물건들만 채워 공간에 여백을 주고
+                            간결한 선과 면으로 다듬어진 깔끔한 인테리어를 선보입니다.
+                        </div>
+                        <div class="btm-txtbox2">Modern</div>
+                        <div class="view-all"><a href="#">Review <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                <div id="tab-2" class="tab-content">
+                    <div class="top-img">
+                        <div class="top-img01">
+                            <img src="./img/main-2-img-nature-1.jpg" alt="">
+                        </div>
+                        <div class="top-img02">
+                            <img src="./img/main-2-img-nature-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="btm-img">
+                        <div class="btm-txt wow bounceInUp">
+                            <p>Natural</p>
+                        </div>
+                        <img src="./img/main-2-img-nature-3.jpg" alt="">
+                        <div class="btm-txtbox">
+                            진정한 아름다움은 자연스러움에서 시작됩니다.
+                            자연에서 얻은 소재와 색감은 공간에 담담하면서도
+                            활발한 에너지를 더해주며 오래도록 질리지 않는 편안하고
+                            안락한 공간을 완성해줍니다.
+                        </div>
+                        <div class="btm-txtbox2">Natural</div>
+                        <div class="view-all"><a href="#">Review <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                <div id="tab-3" class="tab-content">
+                    <div class="top-img">
+                        <div class="top-img01">
+                            <img src="./img/main-2-img-classic-1.jpg" alt="">
+                        </div>
+                        <div class="top-img02">
+                            <img src="./img/main-2-img-classic-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="btm-img">
+                        <div class="btm-txt wow bounceInUp">
+                            <p>Classic</p>
+                        </div>
+                        <img src="./img/main-2-img-classic-3.jpg" alt="">
+                        <div class="btm-txtbox">
+
+                            과하지 않은 화려함으로 절제된 아름다움을 보여주는
+                            클래식 스타일은 적절하게 가미된 장식적 요소와 우아한
+                            곡선 포인트로 공간에 격식과 품격을 더해줍니다.
+
+                        </div>
+                        <div class="btm-txtbox2">Classic</div>
+                        <div class="view-all"><a href="#">Review <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+                <div id="tab-4" class="tab-content">
+                    <div class="top-img">
+                        <div class="top-img01">
+                            <img height="1000" width="700" src="./img/main-2-img-unique-1.jpg" alt="">
+                        </div>
+                        <div class="top-img02">
+                            <img height="600" width="200" src="./img/main-2-img-unique-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="btm-img">
+                        <div class="btm-txt wow bounceInUp">
+                            <p>Unique</p>
+                        </div>
+                        <img src="./img/main-2-img-unique-3.jpg" alt="">
+                        <div class="btm-txtbox">
+                            나만의 개성과 취향을 듬뿍 담아 집안 구석구석
+                            생동감 넘치는 아이템들로 완성한 유니크 스타일은
+                            지루하고 나른한 일상에 새로움을 선사합니다.
+                            톡톡 튀는 컬러와 다양한 소재의 믹스매치로 완성된
+                            독창적인 공간을 만나보세요.
+                        </div>
+                        <div class="btm-txtbox2">Unique</div>
+                        <div class="view-all"><a href="#">Review <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section04">
+            <div class="sc04-wrap">
+                <div class="sc04-txtbox  wow fadeInLeft">
+                    <div class="sc04-title">Made in Younglim</div>
+                    <div class="sc04-txt">
+                        영림은 원자재 입고부터 생산, 조립, 납품, 서비스까지 한 번에 진행하는<br>
+                        원스톱 생산공정 시스템을 통해 품질을 철저히 관리하고 있습니다.
+                    </div>
+                    <div class="the-button wow fadeInUp">더 알아보기</div>
+                </div>
+                <div class="video">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/L3GplJfWC-s"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section05">
+            <div class="sc05-wrap">
+                <div class="pd-category">
+                    <div class="pd-title wow fadeInDown">Product Category</div>
+                    <div class="pd-itemList wow slideInUp">
+                        <div class="pd-item">
+                            <div class="item-img item01"></div>
+                            <div class="item-txt">키친</div>
+                        </div>
+                        <div class="pd-item">
+                            <div class="item-img item02"></div>
+                            <div class="item-txt">바스</div>
+                        </div>
+                        <div class="pd-item">
+                            <div class="item-img item03"></div>
+                            <div class="item-txt">도어</div>
+                        </div>
+                        <div class="pd-item">
+                            <div class="item-img item04"></div>
+                            <div class="item-txt">중문</div>
+                        </div>
+                        <div class="pd-item">
+                            <div class="item-img item05"></div>
+                            <div class="item-txt">창호</div>
+                        </div>
+                        <div class="pd-item">
+                            <div class="item-img item06"></div>
+                            <div class="item-txt">벽바닥재</div>
+                        </div>
+                        <div class="pd-item">
+                            <div class="item-img item07"></div>
+                            <div class="item-txt">컬러</div>
+                        </div>
+                        <div class="pd-item">
+                            <div class="item-img item08"></div>
+                            <div class="item-txt">빌트인가구</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc05-slider">
+                    <span class="sc05-toptxt wow fadeInLeft">Designer's Pick</span>
+                    <div class="sc05-slider01">
+                        <div class="swiper-container sc05-slide01">
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide_layout slide-kitchin">
+                                        <div class="slide_left">
+                                            <a href="#">
+                                                <div class="left-img01">
+                                                    <img src="./img/kitchin-left.png" alt="">
+                                                    <p>Frame Stone Grey</p>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="left-img02">
+                                                    <img src="./img/kitchin-small.png" alt="">
+                                                    <p>Edge45 Cashmere & Eucalyptus</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="slide-right">
+                                            <a href="#">
+                                                <div class="right-img01">
+                                                    <img src="./img/kitchin-right.png" alt="">
+                                                    <p>Atelier Cream</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide_layout slide-bath">
+                                        <div class="slide_left">
+                                            <a href="#">
+                                                <div class="left-img01">
+                                                    <img src="./img/bath-left.png" alt="">
+                                                    <p>Forest Green</p>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                        <div class="slide-right">
+                                            <a href="#">
+                                                <div class="right-img01">
+                                                    <img src="./img/bath-right01.png" alt="">
+                                                    <p>Mono Code</p>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="right-img02">
+                                                    <img src="./img/bath-right02.png" alt="">
+                                                    <p>Slow Weekend</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide_layout slide-door">
+                                        <div class="slide_left">
+                                            <a href="#">
+                                                <div class="left-img01">
+                                                    <img src="./img/door-left.png" alt="">
+                                                    <p>Lapine</p>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                        <div class="slide_right">
+                                            <a href="#">
+                                                <div class="right-img01">
+                                                    <img src="./img/door-right01.png" alt="">
+                                                    <p>Snow</p>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="right-img02">
+                                                    <img src="./img/door-right02.png" alt="">
+                                                    <p>Granite</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide_layout slide-moon">
+                                        <div class="slide_left">
+                                            <a href="#">
+                                                <div class="left-img01">
+                                                    <img src="./img/middle-door-left.png" alt="">
+                                                    <p>Gansal</p>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="left-img02">
+                                                    <img src="./img/middle-door-left02.png" alt="">
+                                                    <p>Aurora</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="slide-right">
+                                            <a href="#">
+                                                <div class="right-img01">
+                                                    <img src="./img/middle-door-right01.png" alt="">
+                                                    <p>Demeter</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide_layout slide-badak">
+                                        <div class="slide_left">
+                                            <a href="#">
+                                                <div class="left-img01">
+                                                    <img src="./img/badak-left.png" alt="">
+                                                    <p>Blond Oak</p>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                        <div class="slide-right">
+                                            <a href="#">
+                                                <div class="right-img01">
+                                                    <img src="./img/badak-righ01.png" alt="">
+                                                    <p>Stonecloud Blue</p>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="right-img02">
+                                                    <img src="./img/badak-right02.png" alt="">
+                                                    <p>Tembar Board</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide_layout slide-built">
+                                        <div class="slide_left">
+                                            <a href="#">
+                                                <div class="left-img01">
+                                                    <img src="./img/builtin-left.png" alt="">
+                                                    <p>Dark Michelan</p>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                        <div class="slide_right">
+                                            <a href="#">
+                                                <div class="right-img01">
+                                                    <img src="./img/builtin-right01.jpg" alt="">
+                                                    <p>Reina Shaker White</p>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="right-img02">
+                                                    <img src="./img/builtin-right02.png" alt="">
+                                                    <p>Esker</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="sc05-slider02">
+                        <div class="swiper-container sc05-slide02">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-01.png" alt="">
+                                    <p>Slow Weekend</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-02.png" alt="">
+                                    <p>Lapine</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-03.png" alt="">
+                                    <p>Snow</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-04.png" alt="">
+                                    <p>Granite</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-05.png" alt="">
+                                    <p>Gansal</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-06.png" alt="">
+                                    <p>Aurora</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-07.png" alt="">
+                                    <p>Demeter</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-08.png" alt="">
+                                    <p>Blond Oak</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-09.png" alt="">
+                                    <p>Stonecloud Blue</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-10.png" alt="">
+                                    <p>Tembar Board</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-11.png" alt="">
+                                    <p>Dark Michelan</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-12.png" alt="">
+                                    <p>Reina Shaker White</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sc06-mini-13.png" alt="">
+                                    <p>Esker</p>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section06">
+            <div class="sc06-wrap">
+                <div class="sc06-box">
+                    <div class="sc06-img">
+                        <img src="./img/main-img-brand.jpg" alt="" class="ispc">
+                        <img src="./img/mo-main-img-brand.jpg" alt="" class="istablt">
+                    </div>
+                </div>
+                <div class="sc06-txtbox">
+                    <p class="sc06-title wow fadeInDown">Unalterable Value Over Time</p>
+                    <p class="sc06-sub wow fadeInDown">
+                        시간이 흐름에도 지속되는 삶의 가치를 담아 행복한
+
+                        일상을 만들기 위해 <br>영림의 디자이너들은 끊임없이
+
+                        고민하고 연구합니다.
+                    </p>
+                    <div class="sc06-button wow fadeInUp"><a href="#"> 더 보러가기</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section07">
+            <div class="sc07-wrap">
+                <div class="sc07-txtbox wow fadeInDown">
+                    <div class="sc07-txt-left">
+                        매거진.Y
+                    </div>
+                    <div class="sc07-txt-right">
+                        <a href="#">
+                            More<i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="sc07-content wow fadeInUp">
+                    <div class="sc07-boxwrap">
+                        <div class="sc07-box">
+                            <a href="#">
+                                <img src="./img/sc07-img01.jpg" alt="">
+                                <div class="txt-box">
+                                    <h4>TV CF 속 그 공간, 그 제품 </h4>
+                                    <span>
+                                        2021 영림의 다양한 신제품들을 담은 현장 속 인테리어 살펴보기
+                                    </span>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="sc07-box">
+                            <a href="#">
+                                <img src="./img/sc07-img02.jpg" alt="">
+                                <div class="txt-box">
+                                    <h4>새로운 꿈을 꾸며 내일을 설계하는 집 </h4>
+                                    <span>
+                                        눈이 펑펑 오던 어느 겨울, 고요하게 눈이 쌓인 전원주택 마을을 방문했다
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sc07-box">
+                            <a href="#">
+                                <img src="./img/sc07-img03.jpg" alt="">
+                                <div class="txt-box">
+                                    <h4>2021 영림 TV CF 광고 촬영 비하인드</h4>
+                                    <span>
+                                        토탈인테리어 브랜드 ‘영림’의 첫 TV CF 촬영 비하인드 스토리, 지금 공개합니다.
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section08">
+            <div class="sc08-wrap">
+                <div class="sc08-txtbox wow fadeInDown">
+                    <div class="sc08-txt">
+                        <h4>지금 영림에 문의 하세요. 전문 컨설팅을 통해 </h4>
+                        <h4>당신의 라이프스타일에 딱 맞는 인테리어를 제안해 드립니다.</h4>
+                        <p>Contact Us</p>
+                    </div>
+                </div>
+                <div class="sc08-boxwrap wow fadeInUp">
+                    <div class="sc08-box">
+                        <a href="#">
+                            <img src="./img/younglim_cs_illust_01_0.jpg" alt="">
+                            <div class="txt-box">
+                                <h4>Concierge Service</h4>
+                                <span>
+                                    맞춤형 상담 신청하기
+                                </span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="sc08-box">
+                        <a href="#">
+                            <img src="./img/younglim_cs_illust_02_27.jpg" alt="">
+                            <div class="txt-box">
+                                <h4>Online Showroom</h4>
+                                <span>
+                                    온라인 쇼룸 둘러보기
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sc08-box">
+                        <a href="#">
+                            <img src="./img/younglim_cs_illust_03_3.jpg" alt="">
+                            <div class="txt-box">
+                                <h4>Online Chatting</h4>
+                                <span>
+                                    실시간 채팅 상담하기
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section09">
+            <div class="sc09-wrap">
+                <div class="sc09-content">
+                    <div class="sc09-leftbox wow fadeInLeft">
+                        <div class="sc09-img">
+                            <img src="./img/main-img-banner-01.jpg" alt="">
+                        </div>
+                        <div class="sc09-txt">
+                            <div class="sc09-title">
+                                Start Your Interior
+                            </div>
+                            <div class="sub-title">
+                                인테리어 어디서부터 시작해야 할지 막막하시죠?<br>
+                                자재 선택부터 시공방법까지 하나하나 알려드릴게요.
+                            </div>
+                            <div class="button-box">
+                                <a href="#">인테리어 시작하기</a>
+                            </div>
+                        </div>
+                        <div class="sc09-bg"></div>
+                    </div>
+                    <div class="sc09-rightbox wow fadeInRight">
+                        <div class="sc09-img">
+                            <img src="./img/main-img-banner-02.jpg" alt="">
+                        </div>
+                        <div class="sc09-txt white">
+                            <div class="sc09-title">
+                                Check Younglim Mark
+                            </div>
+                            <div class="sub-title">
+                                품질에 대한 자부심을 담은 영림의<br>
+                                제품에는 정품 마크가 표기되어 있습니다.<br>
+                                영림의 철학과 가치를 나타내는 정품 마크를 확인해보세요.
+                            </div>
+                            <div class="button-box">
+                                <a href="#">영국 브랜드 아이덴티티</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-inner">
+                    <div class="footer-row">
+                        <div class="footer-logo">영림토탈인테리어</div>
+                        <div class="footer-menu">
+                            <ul class="menu-list">
+                                <li class="menu-item"><a href="#">브랜드</a></li>
+                                <li class="menu-item"><a href="#">제품</a></li>
+                                <li class="menu-item"><a href="#">인테리어 솔루션</a></li>
+                                <li class="menu-item"><a href="#">매거진.Y</a></li>
+                                <li class="menu-item"><a href="#">쇼룸</a></li>
+                            </ul>
+                            <ul class="menu-list">
+                                <li class="menu-item"><a href="#">E-카탈로그</a></li>
+                                <li class="menu-item"><a href="#">고객센터</a></li>
+                                <li class="menu-item"><a href="#">이용약관</a></li>
+                                <li class="menu-item"><a href="#">개인정보 처리방침</a></li>
+                                <li class="menu-item"><a href="#">회사소개</a></li>
+                            </ul>
+                            <ul class="menu-list">
+                                <li class="menu-item"><a href="#">BLOG<i class="fas fa-location-arrow"></i></a></li>
+                                <li class="menu-item"><a href="#">INSTARGRAM<i class="fas fa-location-arrow"></i></a>
+                                </li>
+                                <li class="menu-item red"><a href="#">YOUTUBE<i class="fas fa-location-arrow"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__corporaterow">
+                        <div class="footer__corporate">
+                            <div class="footer__corporatename">영림임업(주)</div>
+                            <div class="footer__corporateinfo">인천광역시 남동구 호구포로 9</div>
+                            <div class="footer__corporateinfo">
+                                <span>대표. 황복현</span>
+                                <span>사업자 등록번호. 137-81-02411</span>
+                            </div>
+                            <div class="footer__corporateinfo">
+                                <span>Tel. 032-813-5500</span>
+                                <span>Fax. 032-813-5505</span>
+                            </div>
+                        </div>
+                        <div class="footer__corporate">
+                            <div class="footer__corporatename">영림화학(주)</div>
+                            <div class="footer__corporateinfo">인천광역시 서구 북항로 31번길 13</div>
+                            <div class="footer__corporateinfo">
+                                <span>대표. 황복현</span>
+                                <span>사업자 등록번호. 137-81-02411</span>
+                            </div>
+                            <div class="footer__corporateinfo">
+                                <span>Tel. 032-813-5500</span>
+                                <span>Fax. 032-813-5505</span>
+                            </div>
+                        </div>
+                        <div class="footer__corporate">
+                            <div class="footer__corporatename">영림산업(주)</div>
+                            <div class="footer__corporateinfo">인천광역시 남동구 호구포로 9</div>
+                            <div class="footer__corporateinfo">
+                                <span>대표. 황복현</span>
+                                <span>사업자 등록번호. 137-81-40827</span>
+                            </div>
+                            <div class="footer__corporateinfo">
+                                <span>Tel. 032-813-5500</span>
+                                <span>Fax. 032-813-5505</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-inner">
+                        <div class="footer__copy">
+                            younglim
+                        </div>
+                        <div class="footer__cs">
+                            고객센터<span>1577 - 5600</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>s
+
+        <div id="cursorMeter">
+            <div id="percent">Page Scrolled</div>
+            <div id="scrollPath">
+                <div id="pregressBar"></div>
+            </div>
+        </div>
+
+        <script src="./js/main.js"></script>
 
     </div>
 
